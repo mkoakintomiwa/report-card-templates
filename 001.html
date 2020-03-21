@@ -159,7 +159,7 @@
 
             <tr>
                 {% for ca_param_name in local.ca_param_names %}
-                    <td> {{ ca_param_name }} </td>
+                    <td> {{ ca_param_name|e }} </td>
                 {% endfor %}
             </tr>
 
