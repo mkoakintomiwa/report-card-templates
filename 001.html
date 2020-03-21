@@ -145,5 +145,27 @@
         </table>
     </div>
 
+    <div>
+        <table>
+            <tr>
+                <td>COGNITIVE DOMAIN</td>
+            </tr>
+
+            <tr>
+                <td rowspan='2'>SUBJECTS</td>
+                <td>CONTINUOUS ASSESSMENT</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                {% for ca_param_name in local.ca_param_names %}
+                    <td> {{ ca_param_name }} </td>
+                {% endfor %}
+            </tr>
+
+            $result_content
+        </table>
+    </div>
+
 
 </div>
